@@ -106,7 +106,8 @@
 
             # Render resume.json
             ${pkgs.resumed}/bin/resumed render \
-              --theme ${themePkg}/lib/node_modules/jsonresume-theme-${themeName}/index.js
+              --theme ${themePkg}/lib/node_modules/jsonresume-theme-${themeName}/index.js \
+              --output resume.pdf
           '';
       in {
         inherit fmt-as-json;
